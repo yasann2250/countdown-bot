@@ -72,6 +72,7 @@ async def scheduler():
 @client.event
 async def on_ready():
     print(f"ログイン成功: {client.user}")
+    await send_countdown()
     scheduler.start()
 
 
